@@ -1,0 +1,31 @@
+{
+  "name": "edgar/ez-uisites-bundle",
+  "license": "GPL-2.0-only",
+  "description": "eZ Platform sites UI interface entry",
+  "authors": [
+    {
+      "name": "Emmanuel DROUET",
+      "email": "emmanuel.drouet@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Edgar\\EzUISitesBundle\\": "src/bundle/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": { "Edgar\\EzUISitesBundle\\Tests\\": "src/bundle/Tests" }
+  },
+  "require": {
+    "php": ">=7.1",
+    "ezsystems/ezpublish-kernel": "^7.0",
+    "ezsystems/ezplatform-admin-ui": "^1.0",
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "~2.7.1",
+    "phpunit/phpunit": "^6.4"
+  },
+  "scripts": {
+    "fix-cs": "@php ./vendor/bin/php-cs-fixer fix -v --show-progress=estimating"
+  }
+}
