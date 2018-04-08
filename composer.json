@@ -10,7 +10,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Edgar\\EzUISitesBundle\\": "src/bundle/"
+      "Edgar\\EzUISitesBundle\\": "src/bundle/",
+      "Edgar\\EzUISites\\": "src/lib/"
     }
   },
   "autoload-dev": {
