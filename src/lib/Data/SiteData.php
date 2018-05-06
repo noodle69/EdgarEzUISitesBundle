@@ -36,4 +36,9 @@ class SiteData
     {
         return $this->identifier;
     }
+
+    public function __toString(): string
+    {
+        return $this->getSite();
+    }
 }
